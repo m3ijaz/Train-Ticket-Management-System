@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>ADMIN LOGIN - Train Ticket Management System</title>
+  <link rel="stylesheet" type="text/css" href="../Asset/adminLogin.css" />
+</head>
+
+<body class="bg-image">
+
+  <header>
+    <h5>Train Ticket Management System</h5>
+  </header>
+
+  <nav align="right">
+    <ul>
+      <li><a href="./homepage.html">Homepage</a></li>
+      <li><a href="./adminReg.html">Admin</a></li>
+      <li><a href="./customerReg.html">Customer</a></li>
+  </nav>
+
+  <div class="container">
+    <div class="login-box">
+      <form name="adminLoginForm" method="POST" action="../Management/adminLoginCheck.php">
+        <h1>Admin Login</h1>
+        <label for="admin_username"> Username: </label>
+        <input id="admin_username" type="text" name="adminUsername" placeholder="your username" value="" required />
+        <label for="admin_password"> Password: </label>
+        <input id="admin_password" type="password" name="adminPassword" placeholder="your password" value="" required />
+
+        <input type="submit" name="loginSubmit" value="Login" />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="adminReg.html" style="color: yellow;"> Don't have an account? </a>
+
+        <br><br>
+        <div style="color: red;" align="center">
+          <?=$error?>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>Train Ticket Management System &copy; 2023</p>
+  </footer>
+
+</body>
+
+</html>

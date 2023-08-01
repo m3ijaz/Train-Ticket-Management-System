@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ADMIN REGISTER - Train Ticket Management System</title>
+    <link rel="stylesheet" type="text/css" href="../Asset/adminReg.css" />
+</head>
+
+<body class="bg-image">
+
+    <header>
+        <h5>Train Ticket Management System</h5>
+    </header>
+
+    <nav align="right">
+        <ul>
+            <li><a href="./homepage.html">Homepage</a></li>
+            <li><a href="./adminReg.html">Admin</a></li>
+            <li><a href="./customerReg.html">Customer</a></li>
+    </nav>
+
+    <div class="container">
+        <div class="reg-box">
+            <form name="adminRegForm" method="POST" action="../Management/adminRegCheck.php">
+                <h1>Admin Registration</h1>
+                <label for="admin_Name"> Name: </label>
+                <input id="admin_Name" type="text" name="adminName" placeholder="enter your name" required />
+
+                <label for="admin_Email"> Email: </label>
+                <input id="admin_Email" type="text" name="adminEmail" placeholder="enter your e-mail" required />
+
+                <label for="admin_Contact"> Contact: </label>
+                <input id="admin_Contact" type="number" name="adminContact" placeholder="enter your contact number"
+                    required />
+
+                <label for="admin_Username"> Username: </label>
+                <input id="admin_Username" type="text" name="adminUsername" placeholder="enter your username"
+                    required />
+
+                <label for="admin_Password"> Password: </label>
+                <input id="admin_Password" type="password" name="adminPassword" placeholder="enter your password"
+                    required />
+
+                <input type="submit" name="regSubmit" value="Register" />
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="adminLogin.html" style="color: rgb(184, 228, 8);"> Already have an account? </a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Train Ticket Management System &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
